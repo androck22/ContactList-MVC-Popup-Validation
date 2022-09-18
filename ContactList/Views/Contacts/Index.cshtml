@@ -1,0 +1,11 @@
+﻿@model IEnumerable<ContactList.Models.Contact>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-center">Contact List</h1>
+
+<div id="view-all">
+    @await Html.PartialAsync("_ViewAll", Model)
+</div>
